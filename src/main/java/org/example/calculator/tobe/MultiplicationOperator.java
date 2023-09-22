@@ -1,12 +1,10 @@
-package org.example.calculate.tobe;
+package org.example.calculator.tobe;
 
-import org.example.calculate.NewArithmeticOperator;
-import org.example.calculate.PositiveNumber;
+import org.example.calculator.domain.PositiveNumber;
 
-public class MultiplicationOperator implements NewArithmeticOperator {
+public class MultiplicationOperator implements ArithmeticOperator{
     @Override
     public boolean supports(String operator) {
-        System.out.println("곱하기"+ operator);
         return "*".equals(operator);
     }
 

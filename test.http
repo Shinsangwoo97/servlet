@@ -1,0 +1,4 @@
+GET http://localhost:8080/calculate?operand1=20&operator=%2b&operand2=10
+
+
+// +가 안되는이유 인코딩해서 사용해야함 url에서 사용되는 문자라서 (예약어)
